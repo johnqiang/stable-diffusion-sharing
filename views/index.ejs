@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="imgWrap">
+      <% for (var i = 0; i < images.length; i++) { %>
+        <img src=<%= images[i] %> alt="">
+      <% } %>
+    </div>
+    <p>Prompt：<%= prompt %></p>
+    <p>Negative Prompt： <%= negativePrompt %></p>
+    <p>Sampling Method： <%= samplingMethod %></p>
+    <p>Sampling Steps： <%= samplingSteps %></p>
+    <p>CFG： <%= CFG %></p>
+    <p>Seed： <%= Seed %></p>
+  </body>
+</html>
