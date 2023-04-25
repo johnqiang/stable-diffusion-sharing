@@ -4,7 +4,7 @@ const router = require('koa-router')()
 const headers = {
   'X-GitHub-Api-Version': '2022-11-28',
   Accept: 'application/vnd.github+json',
-  Authorization: 'token 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',
+  Authorization: 'token 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',
 }
 
 router.get('/', async (ctx, next) => {
