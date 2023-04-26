@@ -4,7 +4,7 @@ const router = require('koa-router')()
 const headers = {
   'X-GitHub-Api-Version': '2022-11-28',
   Accept: 'application/vnd.github+json',
-  Authorization: 'token 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',
+  Authorization: 'token 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',
 }
 
 router.get('/', async (ctx, next) => {
@@ -54,7 +54,7 @@ router.get('/:id', async (ctx, next) => {
       title: 'Stable Diffusion Sharing', images, prompt, negativePrompt, samplingMethod, samplingSteps, CFG, Seed
     })
   } catch (err) {
-    console.log(err.message)
+    console.log('==========异常', err.message)
   }
 
 })
